@@ -6,9 +6,15 @@
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}" />
-    <title>Contact Form</title>
+    <title>login page</title>
 </head>
 <body>
-    
+    <form action="/login_val" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required /><br />
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required /><br />
+        <input type="submit" value="submit" />
+    </form>
 </body>
 </html>
